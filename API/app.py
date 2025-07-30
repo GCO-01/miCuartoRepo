@@ -19,3 +19,8 @@ def get_superheroes():
 def get_cursos(): 
     rows =["Docker", "Bash", "Linux", "Inglés","Python", "Javascript", "Azure", "DevOps"]
     return rows
+
+@app.get("/superheroesMarvel")
+def get_superheroes():
+    rows = ["Ironman", "Capitan America", "Spiderman", "Hulk", "Deadpool", "Fantastic 4"]
+    return rows
